@@ -1,0 +1,110 @@
+#animation
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#box
+{
+    height: 80px;
+    width: 80px;
+    
+    background-image: linear-gradient(yellow,rgb(165, 165, 20));
+    position: absolute;
+    filter: blur(10px);
+    animation-name:anime4;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transition: 3s all ease;
+    border-radius: 33%;
+
+}
+#box1
+{
+    height: 80px;
+    width: 80px;
+    
+    filter: blur(10px);
+    animation-name:anime3;
+    background-image: linear-gradient(yellow,rgb(165, 165, 20));
+   
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transition: 3s all ease;
+
+    
+}
+#box2
+{
+    height: 80px;
+    width: 80px;
+    
+    position: absolute;
+    filter: blur(10px);
+    animation-name:anime2;
+    background-image: linear-gradient(yellow,rgb(165, 165, 20));
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transition: 3s all ease;
+
+}
+#box3
+{
+    height: 80px;
+    width: 80px;
+    
+    background-image: linear-gradient(yellow,rgb(165, 165, 20));
+    filter: blur(10px);
+    border-radius: 33%;
+    animation-name:anime1;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transition: 3s all ease;
+
+}
+@keyframes anime1{
+    from{
+        transform: translate(55%,-3%);
+    }
+    to{
+        transform: translate(0%,10%);
+    }
+    
+}
+@keyframes anime2{
+    from{
+        transform: translate(5%,-5%);
+    }
+    to{
+        transform: translate(-40%,30%);
+    }
+    
+}
+@keyframes anime3 {
+    from{
+        transform: translate(10%,-5%);
+    }
+    to{
+        transform: translate(-20%,10%);
+    }
+    
+}
+@keyframes anime4 {
+    from{
+        transform: translate(-20%,10%);
+    }
+    to{
+        transform: translate(10%,10%);
+    }
+    
+}
